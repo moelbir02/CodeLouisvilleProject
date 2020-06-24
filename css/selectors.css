@@ -1,0 +1,57 @@
+.form-contact {
+    padding: 20% 24%;
+    background: #f4f7f8;
+    
+    }
+#container {
+max-width: 500px;
+margin: auto;
+
+} 
+
+
+.br {
+   border-radius:  .5em;
+
+}
+/* DRY Classes------------------ */
+.rounded{
+    border-radius: 100%;
+}
+
+.avatar {
+display: block;
+margin: 0 auto 2em;
+
+}
+.btn {
+    font-size: 1em;
+    font-weight: 300;
+    cursor: pointer; 
+    color: #fff;
+    padding-left: 20px;
+    padding-right: 20px;
+    width: 100%;
+    margin: .5em 0 1em;
+    text-transform: uppercase;
+  }
+  .btn:hover { 
+    opacity: .75; 
+  }
+
+  .default {
+    background-color: #52bab3; 
+  }
+  .error {
+    background-color: #ff784f; 
+  }
+
+  @media (min-width){
+     .inln{
+        width: auto;
+        display: inline-block;
+
+     }
+
+  }
+  
