@@ -29,8 +29,8 @@ margin: 0 auto 2em;
     font-weight: 300;
     cursor: pointer; 
     color: #fff;
-    padding-left: 20px;
-    padding-right: 20px;
+    padding-left: 10px;
+    padding-right: 10px;
     width: 100%;
     margin: .5em 0 1em;
     text-transform: uppercase;
@@ -40,13 +40,12 @@ margin: 0 auto 2em;
   }
 
   .default {
-    background-color: #52bab3; 
-  }
-  .error {
-    background-color: #ff784f; 
+    background-color: #e718e7; 
+    border-radius: 10px;
+    
   }
 
-  @media (min-width){
+  @media (min-width: 1050px){
      .inln{
         width: auto;
         display: inline-block;

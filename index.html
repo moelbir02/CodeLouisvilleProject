@@ -12,31 +12,32 @@
 	
 	<header class="main-header">
 		<div class="container clearfix">
-			<h1 class="name"><a href="#">My Portfilio</a></h1>
+			<h1 class="name"><a href="#">My Portfolio</a></h1>
 			<ul class="main-nav">
 				<li><a href="#">Home</a></li>
-				<li><a href="#">About Me</a></li>
-				<li><a href="#">Education</a></li>
-				<li><a href="#Experience">Experience</a></li>
-				<li><a href="#">Contact Me</a></li>
+				<li><a href="#about">About</a></li>
+				<li><a href="#contact">Contact Me</a></li>
 			</ul>
 		</div>
 	</header><!--/.main-header-->   
 
 	<div class="banner">
 		<img class="logo rounded avatar" src="img/my-pic.JPG" alt="City">
-		<h1 class="headline">Welcome!</h1>
-		<span class="tagline">I am Mohamed ELBIR .</span>
-		<p>108 E Florence Avenue APT 36, Louisville, 40214 Kentucky</p>
+		<h2 class="headline">Front-End Developer!</h2>
+		<span class="tagline"></span>
+		<p> Louisville, Kentucky</p>
 		<p>mohamed.elbir@gmail.com</p>
-		<p> 917-543-7945</p>
+		<p>917-543-7945</p>
+		
+
+		
 	</div><!--/.banner-->
 
-	<div class="container clearfix">
-		
-		<div class="secondary col">
-			<h2>About Me!</h2>
-			<p> I am a Frontend Developer, and I'm very passionate and dedicated to my work. With the experience as a professional frontend developer, I have acquired the skills and knowledge necessary to make your project a success. I enjoy every step of the design process, from discussion and collaboration to concept and execution,but I find the most satisfaction in seeing the finished product do everything for you that it was created to do..</p>
+	<div class="container clearfix" >
+		<h1>About Me</h1>
+		<div class="secondary col" id="about">
+			<h2>Welcome!</h2>
+			<p> My name is Mohamed ELBIR, I am a Frontend Developer, and I'm very passionate and dedicated to my work. With the experience as a professional frontend developer, I have acquired the skills and knowledge necessary to make your project a success. I enjoy every step of the design process, from discussion and collaboration to concept and execution,but I find the most satisfaction in seeing the finished product do everything for you that it was created to do..</p>
 			
 		</div><!--/.secondary-->
 		
@@ -61,8 +62,8 @@
 
 
 	</div><!--/.container-->
-    
-	<form class="form-contact br">
+    <div class="forty">
+	<form class="form-contact br" id="contact">
 		<h1>Contact Me</h1>
 		<label for="name">Name:</label> 
 		<input type="text" id="name">
@@ -73,11 +74,11 @@
 	   <label for="msg">Message:</label>
 	   <textarea id="msg" rows="7"></textarea>
 		<input class="btn inln default" type="submit" value="Submit">
-		 <input class="btn inln error" type="reset" value="Reset"> 
+		 
 	  </form>
-    
+      </div>
 	<footer class="main-footer">
-		<span>&copy;2020 My Portfolio.</span>
+		<span>&copy;Copyright. All Rights Reserved.</span>
 	</footer>
 	
 </body>
