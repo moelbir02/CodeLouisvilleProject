@@ -1,5 +1,5 @@
 .form-contact {
-    padding: 20% 24%;
+    padding: 15% 15%;
     background: #f4f7f8;
     
     }
@@ -25,6 +25,7 @@ margin: 0 auto 2em;
 
 }
 .btn {
+   text-align: center;
     font-size: 1em;
     font-weight: 300;
     cursor: pointer; 

@@ -25,6 +25,7 @@ h1{
 
 	color: #041824;
 	font-size: xx-large;
+	padding-left: .5em;
 	
 }
 h2,
@@ -68,7 +69,7 @@ img {
 }
 .main-nav a {
 	font-size: .95em;
-	color: #fff;
+	color: #093a58;
 	text-transform: uppercase;
 }
 
@@ -90,7 +91,7 @@ img {
 
 .banner {
 	color: #fff;
-	background: lightcoral;
+	background: linear-gradient(to top, rgb(241, 174, 174) 0%, coral 100%);
 	padding: 3.2em 0;
 	margin-bottom: 60px;
 }
@@ -101,11 +102,12 @@ img {
 
 }
 .forty {
-	padding: 10em;
+
+	padding-left:1em ;
+	padding-right: 1em;
+	padding-bottom: 1em;
 	border-radius: 40%;
-	box-shadow: pink;
-	
-	
+	box-shadow: pink;	
 
 }
 .main-footer {
@@ -120,6 +122,7 @@ img {
 	width: 200px;
 }
 .headline {
+	color: white ;
 	margin-bottom: 0;
 
 }
@@ -178,9 +181,21 @@ body {
 		top: 0;
 		z-index: 1000;
 	}
+	.forty {
+		width: 70%;
+		max-width: 10000px;
+		margin: 0 auto;	
+	
+	}
+	.wrap{
+		margin: auto;
+		padding-bottom: 68px;
+		padding-top: 40px;
+		
+	}
 
 	.container {
-		width: 90%;
+		width: 100%;
 		margin: 0 auto;
 	}
 	 .name,
@@ -204,12 +219,7 @@ body {
 	 .tagline {
 		 font-size: 1.4em;
 	 }
-	
-      
-
-	 
-
-	
+		
 
 	/* ---- Float clearfix ---- */
 
@@ -232,8 +242,8 @@ body {
 	.secondary,
 	.tertiary {
         width: 30%;
-
 	}
+
  
  
 }
