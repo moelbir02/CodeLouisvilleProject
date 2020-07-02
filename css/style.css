@@ -76,7 +76,6 @@ img {
 .main-nav a:hover {
 	color: #093a58;
 }
-
 /* ---- Layout Containers ---- */
 
 .main-header {
@@ -163,14 +162,16 @@ label {
 
 
 
-/* ================================= 
-  Media Queries
-==================================== */
-
 body {
 	padding-top: 68px;
 }
 
+.ava { 
+	margin: 0 auto 1em;
+	width: 2%;
+	display: inline;
+
+}
 @media (min-width: 769px) {
 
 	.main-header {

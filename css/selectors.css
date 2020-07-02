@@ -21,10 +21,13 @@ margin: auto;
 
 .avatar {
 display: block;
-margin: 0 auto 2em;
+margin: 0 auto 1em;
 
 }
+
+
 .btn {
+
    text-align: center;
     font-size: 1em;
     font-weight: 300;
@@ -35,6 +38,7 @@ margin: 0 auto 2em;
     width: 100%;
     margin: .5em 0 1em;
     text-transform: uppercase;
+
   }
   .btn:hover { 
     opacity: .75; 
@@ -45,6 +49,7 @@ margin: 0 auto 2em;
     border-radius: 10px;
     
   }
+
 
   @media (min-width: 1050px){
      .inln{
