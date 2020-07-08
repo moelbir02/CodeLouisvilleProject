@@ -1,6 +1,4 @@
-/*
-  If you get stuck, feel free to watch the follow-up videos where I'll show you one solution
-*/
+
 
 /* ================================= 
   Base Element Styles
@@ -10,33 +8,35 @@
 	box-sizing: border-box;
 }
 
-body {
+body{
+    padding-top: 68px;
 	font-family: 'Varela Round', sans-serif;
 	line-height: 1.6;
 	color: #3a3a3a;
+	
 }
 
 p {
 	font-size: .95em;
-	margin-bottom: 1.8em;
+	margin-bottom: 1em;
 	 
 }
 h1{
 
-	color: #041824;
+	color: #093a58;
 	font-size: xx-large;
-	padding-left: .5em;
+	padding-left:0;
 	
 }
 h2,
-h3,
 a {
-	color: #093a58;
+	color: #093a58;;
 }
 
-h2,
-h3 {
-	margin-top: 0;
+h2 {
+	font-style:oblique;
+    color: tomato;
+	margin-top: .5em;
 }
 
 a {
@@ -44,16 +44,21 @@ a {
 }
 
 img {
-	max-width: 100%;
+	max-width: 15em;
+
 }
+.contact{
+background-color:rgb(235, 167, 143);
 
-
-
-/* ---- Navigation ---- */
-
+}
 .name {
+	
 	font-size: 1.25em;
 	margin: 0;
+}
+.name,  h3 {
+display: inline-block;
+
 }
 
 .name a,
@@ -81,6 +86,7 @@ img {
 .main-header {
 	padding: .5em;
 	padding: .5em;
+	
 }
 
 .banner,
@@ -91,6 +97,7 @@ img {
 .banner {
 	color: #fff;
 	background: linear-gradient(to top, rgb(241, 174, 174) 0%, coral 100%);
+	/* background-image: url("https://images.app.goo.gl/A5FABiBEh277sGQZ8"); */
 	padding: 3.2em 0;
 	margin-bottom: 60px;
 }
@@ -101,15 +108,26 @@ img {
 
 }
 .forty {
-
-	padding-left:1em ;
-	padding-right: 1em;
-	padding-bottom: 1em;
+    padding-top: 4em;
+	padding-left:4em ;
+	padding-right: 4em;
+	padding-bottom: 4em;
 	border-radius: 40%;
-	box-shadow: pink;	
+	box-shadow: rgb(54, 38, 41);
+	
+	
 
 }
+.info{
+    padding-top: 4em;
+    padding-left:4em ;
+    padding-right: 4em;
+	padding-bottom: 4em;
+	border-radius: 40%;
+	
+}
 .main-footer {
+
 	background: #d9e4ea;
 	padding: 2em 0;
 	
@@ -125,6 +143,7 @@ img {
 	margin-bottom: 0;
 
 }
+
 .icon-location {
 	 width: 35px;
 	 position: absolute;
@@ -132,7 +151,6 @@ img {
 	 right: -15px;
 
 }
-
 
 /* Form Fields -------------------- */
 
@@ -160,18 +178,11 @@ label {
   margin:1em 1em 1em .5em; 
 }
 
-
-
-body {
-	padding-top: 68px;
-}
-
 .ava { 
 	margin: 0 auto 1em;
-	width: 2%;
-	display: inline;
-
+	width: 3em;	
 }
+
 @media (min-width: 769px) {
 
 	.main-header {
@@ -244,7 +255,5 @@ body {
 	.tertiary {
         width: 30%;
 	}
-
- 
  
 }

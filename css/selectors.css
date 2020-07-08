@@ -9,6 +9,10 @@ margin: auto;
 
 } 
 
+.nav li {
+
+	display: inline-block;
+}	
 
 .br {
    border-radius:  .5em;
@@ -24,8 +28,6 @@ display: block;
 margin: 0 auto 1em;
 
 }
-
-
 .btn {
 
    text-align: center;
@@ -45,18 +47,15 @@ margin: 0 auto 1em;
   }
 
   .default {
-    background-color: #e718e7; 
+    background-color: royalblue; 
     border-radius: 10px;
     
   }
-
 
   @media (min-width: 1050px){
      .inln{
         width: auto;
         display: inline-block;
-
      }
-
   }
   
