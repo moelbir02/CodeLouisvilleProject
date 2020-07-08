@@ -96,8 +96,13 @@ display: inline-block;
 
 .banner {
 	color: #fff;
-	background: linear-gradient(to top, rgb(241, 174, 174) 0%, coral 100%);
-	/* background-image: url("https://images.app.goo.gl/A5FABiBEh277sGQZ8"); */
+
+	background: linear-gradient(to top, rgba(241, 174, 174, 0.5) 0%, coral 100%),
+	url("../img/my-pic.JPG");
+	
+    /* background-size: cover;
+    background-position: center; */
+
 	padding: 3.2em 0;
 	margin-bottom: 60px;
 }
