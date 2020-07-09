@@ -117,10 +117,20 @@ display: none;
 
 .banner {
 	color: #fff;
+<<<<<<< HEAD
 	background-image: linear-gradient(to top, rgba(238, 220, 220, 0.5) 0%,rgb(243, 236, 236) 100%), url("../img/World-Travel-HD-Wallpaper-at-NewYork.jpg");
 	/* background-image: url("https://images.app.goo.gl/A5FABiBEh277sGQZ8"); */
 	background-size: cover;
 	background-position: center;
+=======
+
+	background: linear-gradient(to top, rgba(241, 174, 174, 0.5) 0%, coral 100%),
+	url("../img/my-pic.JPG");
+	
+    /* background-size: cover;
+    background-position: center; */
+
+>>>>>>> eab72fce06b8232669bdf1b389ac1f8e651bb88b
 	padding: 3.2em 0;
 	margin-bottom: 10px;
 }
