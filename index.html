@@ -6,23 +6,31 @@
 	<link rel="stylesheet" href="css/normalize.css">
 	<link rel="stylesheet" href="css/style.css">
 	<link rel="stylesheet" href="css/selectors.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
 </head>
 <body>
 	
 	<header class="main-header">
 		<div class="container clearfix">
-			<h1 class="name" ><a href="#">My Portfolio</a></h1>
-			
-			<ul class="main-nav">
-				<li><a href="#">Home</a></li>
-				<li><a href="#About">About </a></li>	
-				<li><a href="contact.html">Contact Me</a></li>
-			</ul>
+			<div class="topnav">
+			  <h1 class="name" ><a href="#">My Portfolio</a></h1>
+			  <div id="myLinks">
+			    <ul class="main-nav">
+				   <li><a href="#">Home</a></li>
+				   <li><a href="#About">About </a></li>	
+				   <li><a href="contact.html">Contact Me</a></li>
+			    </ul>
+		     </div>
+		         <!-- "Hamburger menu" / "Bar icon" to toggle the navigation links -->
+               <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+                  <i class="fa fa-bars"></i>
+		        </a>
+		   </div>
 		</div>
 	</header><!--/.main-header-->   
 
-	<div class="banner">
+	<div class="banner" >
 		<img class="logo rounded" src="img/moe.png" alt="">
 
 		<h2 class="headline">Front-End Developer!</h2>
@@ -43,9 +51,7 @@
 
 			 <p><strong>Code Louisville, USA: </strong>Code Louisville Certification Program - May 2020.</p>
              <p><strong>Borough of Manhattan Community College, USA : </strong> Associate Degree in Computer Science - Junaury 2016.</p>
-             <p><strong> University Sultan Moulay Slimane, MOROCCO: </strong> Bachelor Degree in French Literature - Jun 2008.</p>
-			
-			
+             <p><strong> University Sultan Moulay Slimane, MOROCCO: </strong> Bachelor Degree in French Literature - Jun 2008.</p>	
 		</div><!--/.secondary-->
 		     
 		<div class="primary col">
@@ -84,7 +90,7 @@
 		</ul>
 	    <span>&copy;Copyright. All Rights Reserved.</span>
 	</footer>
-	
+	<script src="js/script.js"></script>
 </body>
 </html>
 

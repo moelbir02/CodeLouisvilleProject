@@ -88,7 +88,28 @@ display: inline-block;
 	padding: .5em;
 	
 }
+.top-nav #myLink{
+display: none;
+}
+.top-nav a {
+	color: ivory;
+	padding: 14px, 16px;
+	text-decoration: none;
+	font-size: 17px;
+	display: black;
 
+}
+.top-nav a.icon{
+	background: black;
+	display: block;
+	position: absolute;
+	right: 0;
+	top: 0;
+}
+.top-nav a:hover{
+	background-color: #ddd;
+	color: black;
+}
 .banner,
 .main-footer {
 	text-align:  center;
@@ -96,15 +117,22 @@ display: inline-block;
 
 .banner {
 	color: #fff;
-	background: linear-gradient(to top, rgb(241, 174, 174) 0%, coral 100%);
+	background-image: linear-gradient(to top, rgba(238, 220, 220, 0.5) 0%,rgb(243, 236, 236) 100%), url("../img/World-Travel-HD-Wallpaper-at-NewYork.jpg");
 	/* background-image: url("https://images.app.goo.gl/A5FABiBEh277sGQZ8"); */
+	background-size: cover;
+	background-position: center;
 	padding: 3.2em 0;
-	margin-bottom: 60px;
+	margin-bottom: 10px;
 }
 
 .col {
 	padding: 1em;
 	padding: 1em;
+
+}
+.descrip{
+
+    margin-top:10%;
 
 }
 .forty {
@@ -119,10 +147,10 @@ display: inline-block;
 
 }
 .info{
-    padding-top: 4em;
-    padding-left:4em ;
-    padding-right: 4em;
-	padding-bottom: 4em;
+    padding: 1em;
+    /* padding:4em ; */
+    /* padding-right: 4em; */
+	/* padding-bottom: 4em; */
 	border-radius: 40%;
 	
 }
@@ -139,7 +167,7 @@ display: inline-block;
 	width: 200px;
 }
 .headline {
-	color: white ;
+	color: whitesmoke ;
 	margin-bottom: 0;
 
 }
@@ -187,7 +215,7 @@ label {
 
 	.main-header {
 		position: fixed;
-		background: tomato;
+		background: rgb(241, 107, 83);
 		box-shadow: 0 1px 4px rgba(0,0,0, .4);
 		width: 100%;
 		top: 0;
