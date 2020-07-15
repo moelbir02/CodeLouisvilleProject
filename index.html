@@ -14,6 +14,10 @@
 	<header class="main-header">
 		<div class="container clearfix">
 			<div class="topnav">
+				<!-- "Hamburger menu" / "Bar icon" to toggle the navigation links -->
+				<a href="javascript:void(0);" class="icon" onclick="myFunction()">
+					<i class="fa fa-bars"></i>
+				  </a>
 			  <h1 class="name" ><a href="#">My Portfolio</a></h1>
 			  <div id="myLinks">
 			    <ul class="main-nav">
@@ -22,10 +26,7 @@
 				   <li><a href="contact.html">Contact Me</a></li>
 			    </ul>
 		     </div>
-		         <!-- "Hamburger menu" / "Bar icon" to toggle the navigation links -->
-               <a href="javascript:void(0);" class="icon" onclick="myFunction()">
-                  <i class="fa fa-bars"></i>
-		        </a>
+		         
 		   </div>
 		</div>
 	</header><!--/.main-header-->   
@@ -51,16 +52,16 @@
 
 			 <p><strong>Code Louisville, USA: </strong>Code Louisville Certification Program - May 2020.</p>
              <p><strong>Borough of Manhattan Community College, USA : </strong> Associate Degree in Computer Science - Junaury 2016.</p>
-             <p><strong> University Sultan Moulay Slimane, MOROCCO: </strong> Bachelor Degree in French Literature - Jun 2008.</p>	
-		</div><!--/.secondary-->
-		     
+			<p><strong> University Sultan Moulay Slimane, MOROCCO: </strong> Bachelor Degree in French Literature - Jun 2008.</p>	
+			
+		</div><!--/.secondary-->  
 		<div class="primary col">
 			<h2>Experience</h2>
 			
 			<p><strong>UPS 1DA HUB, Louisville: </strong> Package Handler, August 2019 - Mars 2020.</p>
 			<p><strong> BMCC, New York : </strong> Teacher's Assistant (Algebra), Junaury 2015 - June 2015.</p>
 			<p><strong> Again Trading Corp, New York: </strong> Sales manager, September 2011 - September 2015 .</p>
-			
+			 
 		</div><!--/.primary--> 
         
 		
@@ -80,6 +81,71 @@
 		</div><!--/.tertiary-->	
 	</div><!--/.container-->
 
+
+	
+
+	<div class= "gallery-container">
+		
+		<div class="mySlides">
+			<div class="numbertext">1 / 6</div>
+			<img src="image/img_5terre_wide.jpg" style="width:100%">
+		  </div>
+		
+		  <div class="mySlides">
+			<div class="numbertext">2 / 6</div>
+			<img src="image/img_lights_wide.jpg" >
+		  </div>
+		
+		  <div class="mySlides">
+			<div class="numbertext">3 / 6</div>
+			<img src="image/img_mountains_wide.jpg">
+		  </div>
+			
+		  <div class="mySlides">
+			<div class="numbertext">4 / 6</div>
+			<img src="image/img_nature_wide.jpg">
+		  </div>
+		
+		  <div class="mySlides">
+			<div class="numbertext">5 / 6</div>
+			<img src="image/img_snow_wide.jpg" >
+		  </div>
+			
+		  <div class="mySlides">
+			<div class="numbertext">6 / 6</div>
+			<img src="image/img_woods_wide.jpg">
+		  </div>
+			
+		  <a class="prev" onclick="plusSlides(-1)">❮</a>
+		  <a class="next" onclick="plusSlides(1)">❯</a>
+		
+		  <div class="caption-container">
+			<p id="caption"></p>
+		  </div>
+		
+		  <div class="row">
+			<div class="column">
+			  <img class="demo cursor" src="image/img_5terre_wide.jpg"  onclick="currentSlide(1)" alt="Cinque Terre">
+			</div>
+			<div class="column">
+			  <img class="demo cursor" src="image/img_lights_wide.jpg"  onclick="currentSlide(2)" alt="Northern Lights">
+			</div>
+			<div class="column">
+			  <img class="demo cursor" src="image/img_mountains_wide.jpg"  onclick="currentSlide(3)" alt="Mountains and fjords">
+			</div>
+			<div class="column">
+			  <img class="demo cursor" src="image/img_nature_wide.jpg"  onclick="currentSlide(4)" alt="Nature and sunrise">
+			</div>
+			<div class="column">
+			  <img class="demo cursor" src="image/img_snow_wide.jpg"  onclick="currentSlide(5)" alt="Snowy Mountains">
+			</div>    
+			<div class="column">
+			  <img class="demo cursor" src="image/img_woods_wide.jpg"  onclick="currentSlide(6)" alt="The Woods">
+			</div>
+		  </div>
+
+	</div>
+
 	<footer class="main-footer">
 		<ul class="nav">
 			<li><a href="https://teamtreehouse.com/mohamedelbir"><img class="ava" src="img/tree.svg"> </a></li>
@@ -88,7 +154,7 @@
 			<li><a href="https://www.instagram.com/ssimo_32/"><img class="ava" src="img/insta.svg"></a></li>
 			<li><a href="https://github.com/moelbir02"><img class="ava" src="img/git.svg"></a></li>
 		</ul>
-	    <span>&copy;Copyright. All Rights Reserved.</span>
+	    <span>&copy;2020Copyright. All Rights Reserved.</span>
 	</footer>
 	<script src="js/script.js"></script>
 </body>

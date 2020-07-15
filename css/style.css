@@ -18,7 +18,7 @@ body{
 
 p {
 	font-size: .95em;
-	margin-bottom: 1em;
+	margin-bottom: .5em;
 	 
 }
 h1{
@@ -37,6 +37,7 @@ h2 {
 	font-style:oblique;
     color: tomato;
 	margin-top: .5em;
+	text-decoration-line: underline;
 }
 
 a {
@@ -44,11 +45,13 @@ a {
 }
 
 img {
-	max-width: 15em;
+	/* max-width: 15em; */
+	width: 100%;
+	vertical-align: middle;
 
 }
 .contact{
-background-color:rgb(235, 167, 143);
+background-color:rgb(245, 205, 190);
 
 }
 .name {
@@ -85,30 +88,7 @@ display: inline-block;
 
 .main-header {
 	padding: .5em;
-	padding: .5em;
-	
-}
-.top-nav #myLink{
-display: none;
-}
-.top-nav a {
-	color: ivory;
-	padding: 14px, 16px;
-	text-decoration: none;
-	font-size: 17px;
-	display: black;
-
-}
-.top-nav a.icon{
-	background: black;
-	display: block;
-	position: absolute;
-	right: 0;
-	top: 0;
-}
-.top-nav a:hover{
-	background-color: #ddd;
-	color: black;
+	padding: .5em;	
 }
 .banner,
 .main-footer {
@@ -117,20 +97,9 @@ display: none;
 
 .banner {
 	color: #fff;
-<<<<<<< HEAD
 	background-image: linear-gradient(to top, rgba(238, 220, 220, 0.5) 0%,rgb(243, 236, 236) 100%), url("../img/World-Travel-HD-Wallpaper-at-NewYork.jpg");
-	/* background-image: url("https://images.app.goo.gl/A5FABiBEh277sGQZ8"); */
 	background-size: cover;
 	background-position: center;
-=======
-
-	background: linear-gradient(to top, rgba(241, 174, 174, 0.5) 0%, coral 100%),
-	url("../img/my-pic.JPG");
-	
-    /* background-size: cover;
-    background-position: center; */
-
->>>>>>> eab72fce06b8232669bdf1b389ac1f8e651bb88b
 	padding: 3.2em 0;
 	margin-bottom: 10px;
 }
@@ -151,9 +120,7 @@ display: none;
 	padding-right: 4em;
 	padding-bottom: 4em;
 	border-radius: 40%;
-	box-shadow: rgb(54, 38, 41);
-	
-	
+	box-shadow: rgb(54, 38, 41);	
 
 }
 .info{
@@ -161,14 +128,16 @@ display: none;
     /* padding:4em ; */
     /* padding-right: 4em; */
 	/* padding-bottom: 4em; */
-	border-radius: 40%;
-	
+	border-radius: 40%;	
 }
+
+
+
+  
 .main-footer {
 
 	background: #d9e4ea;
-	padding: 2em 0;
-	
+	padding: 2em 0;	
 }
 
 /* ---- Page Elements ---- */
@@ -187,8 +156,121 @@ display: none;
 	 position: absolute;
 	 top: -15px;
 	 right: -15px;
-
 }
+.top-nav a.icon{
+	background: black;
+	display: none;
+	position: absolute;
+	right: 0;
+	top: 0;	
+	}
+.top-nav #myLink{
+		display: inline-block;
+		}
+.top-nav a.icon{
+		background: black;
+		display: block;
+		position: absolute;
+		right: 0;
+		top: 0;	
+		}
+.top-nav a {
+		color: ivory;
+		padding: 14px, 16px;
+		text-decoration: none;
+		font-size: 17px;
+		display: black;
+		}
+.top-nav a:hover{
+		background-color: #ddd;
+		color: black;
+		}
+.gallery-container{
+    padding: 6px 6px 6px 6px;
+	position: relative;
+	/* background-color: rgb(238, 170, 170); */
+   
+}
+
+/* Hide the images by default */
+.mySlides {
+	/* display: none; */
+  }
+  
+  /* Add a pointer when hovering over the thumbnail images */
+  .cursor {
+	cursor: pointer;
+  }
+  
+  /* Next & previous buttons */
+  .prev,
+  .next {
+	cursor: pointer;
+	position: absolute;
+	top: 40%;
+	width: auto;
+	padding: 16px;
+	margin-top: -50px;
+	color: white;
+	font-weight: bold;
+	font-size: 20px;
+	border-radius: 0 3px 3px 0;
+	user-select: none;
+	-webkit-user-select: none;
+  }
+  
+  /* Position the "next button" to the right */
+  .next {
+	right: 0;
+	border-radius: 3px 0 0 3px;
+  }
+  
+  /* On hover, add a black background color with a little bit see-through */
+  .prev:hover,
+  .next:hover {
+	background-color: rgba(0, 0, 0, 0.8);
+  }
+  
+  /* Number text (1/3 etc) */
+  .numbertext {
+	color: #f2f2f2;
+	font-size: 12px;
+	padding: 8px 12px;
+	position: absolute;
+	top: 0;
+  }
+  
+  /* Container for image text */
+  .caption-container {
+	text-align: center;
+	background-color: #222;
+	padding: 2px 16px;
+	color: white;
+  }
+  
+  .row:after {
+	content: "";
+	display: table;
+	clear: both;
+  }
+  
+  /* Six columns side by side */
+  .column {
+	float: left;
+	width: 16.66%;
+  }
+  
+  /* Add a transparency effect for thumnbail images */
+  .demo {
+	opacity: 0.6;
+  }
+  
+  .active,
+  .demo:hover {
+	opacity: 1;
+  }
+
+
 
 /* Form Fields -------------------- */
 
@@ -222,6 +304,10 @@ label {
 }
 
 @media (min-width: 769px) {
+
+	#myLinks{
+		display:block !important;
+	 }
 
 	.main-header {
 		position: fixed;
@@ -269,7 +355,6 @@ label {
 	 .tagline {
 		 font-size: 1.4em;
 	 }
-		
 
 	/* ---- Float clearfix ---- */
 
@@ -278,6 +363,13 @@ label {
 		display: table;
 		clear: both;
 	}
+	.top-nav, .icon{
+		display: none;
+	}
+	.column {
+		flex: 50%;
+		max-width: 50%;
+	  }	
 
 }
 
@@ -292,6 +384,13 @@ label {
 	.secondary,
 	.tertiary {
         width: 30%;
+	}	
+	.top-nav, .icon{
+		display: none;
+	}	
+	#myLinks{
+       display:block !important;
+
 	}
- 
+
 }

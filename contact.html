@@ -5,18 +5,26 @@
     <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/selectors.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 
 <header class="main-header">
 	<div class="container clearfix">
-		<h1 class="name" ><a href="#">My Contact Info</a></h1>
-		<ul class="main-nav">
-			<li><a href="index.html">Home</a></li>
-			<li><a href="file:///Users/mac/Desktop/portfolio/index.html#About">About </a></li>	
-			<li><a href="contact.html">Contact Me</a></li>
-		</ul>
-    </header>
-</div>
+        <div class="topnav">
+            <!-- "Hamburger menu" / "Bar icon" to toggle the navigation links -->
+            <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+                <i class="fa fa-bars"></i>
+              </a>
+           <h1 class="name" ><a href="#">My Contact Info</a></h1>
+          <div id="myLinks">
+		    <ul class="main-nav">
+			     <li><a href="index.html">Home</a></li>
+			     <li><a href="file:///Users/mac/Desktop/portfolio/index.html#About">About </a></li>	
+			     <li><a href="contact.html">Contact Me</a></li>
+             </ul>
+          </div>
+       </div>
+   </div>
 
 </header><!--/.main-header-->   
 
@@ -36,15 +44,15 @@
         <form class="form-contact br clearfix" id="contact">
            <h1>Contact Me</h1>
            <label for="name">Name:</label> 
-           <input type="text" id="name">
+           <input type="text" id="name" value="">
            <label for="phone"> Phone:</label> 
-           <input type="tel" id="phone">  
+           <input type="number" min= "0" max="9" id="phone">  
            <label for="email">Email:</label>
            <input type="email" id="email" placeholder="email@website.com">
            <label for="msg">Message:</label>
            <textarea id="msg" rows="7"></textarea>
      
-            <input class="btn inln default" type="submit" value="Submit">
+            <input class="btn inln default" id= "btn" type="submit" value="Submit">
         
         </form>
      </div>
@@ -57,7 +65,7 @@
             <li><a href="https://www.instagram.com/ssimo_32/"><img class="ava" src="img/insta.svg"></a></li>
             <li><a href="https://github.com/moelbir02"><img class="ava" src="img/git.svg"></a></li>
         </ul>
-        <span>&copy;Copyright. All Rights Reserved.</span>
+        <span>&copy;2020Copyright. All Rights Reserved.</span>
     </footer>
     <script src="js/script.js"></script>
     </body>

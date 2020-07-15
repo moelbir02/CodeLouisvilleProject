@@ -1,27 +1,19 @@
 
-// 
-// const button = document.getElementsByClassName(".btn");
-//  button.addEventListener("click", function () {
-    //    field0bj = document.getElementsById ("name").value;
-    //    if (field0bj !== ""){
-        //   console.log(" everything is ok");
-    //    } 
-    //    else {
-        //    console.log("something is wrong")
-    //    }
-//  }, false);
-    
-
+// const submitBtn = document.querySelector('#btn');
+// const nameInput = document.querySelector ('#name');
 // 
 // function isFieldEmpty(){
-    //  const field = document.querySelector(#btn);
-    //  if (!field.value){
-        //   return true;
-    //  }else {
-        //  return true
+    //  
+    //  if (nameInput.value === ""){
+// 
+      // nameInput.value = 'plz enter name ' ;
+      // 
+    // 
     //  }
 // 
 // }
+// submitBtn.addEventListener('click',isFieldEmpty );
+// 
 // 
 function myFunction() {
   var x = document.getElementById("myLinks");
@@ -34,11 +26,32 @@ function myFunction() {
 
 
 
+var slideIndex = 1;
+showSlides(slideIndex);
 
+function plusSlides(n) {
+  showSlides(slideIndex += n);
+}
 
+function currentSlide(n) {
+  showSlides(slideIndex = n);
+}
 
+function showSlides(n) {
+  var i;
+  var slides = document.getElementsByClassName("mySlides");
+  var dots = document.getElementsByClassName("demo");
+  var captionText = document.getElementById("caption");
+  if (n > slides.length) {slideIndex = 1}
+  if (n < 1) {slideIndex = slides.length}
+  for (i = 0; i < slides.length; i++) {
+      slides[i].style.display = "none";
+  }
+  for (i = 0; i < dots.length; i++) {
+      dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";
+  dots[slideIndex-1].className += " active";
+  captionText.innerHTML = dots[slideIndex-1].alt;
+}
 
- 
-
-
- 
