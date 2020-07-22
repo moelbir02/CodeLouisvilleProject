@@ -36,7 +36,8 @@ a {
 h2 {
 	font-style:oblique;
     color: tomato;
-	margin-top: .5em;
+	margin-top: auto;
+	margin-bottom: .5em;
 	text-decoration-line: underline;
 }
 
@@ -58,6 +59,7 @@ background-color:rgb(245, 205, 190);
 	
 	font-size: 1.25em;
 	margin: 0;
+	padding: .5em;
 }
 .name,  h3 {
 display: inline-block;
@@ -73,16 +75,23 @@ display: inline-block;
 .main-nav {
 
    margin-top: 5px;
-
+   margin-left: auto;
 }
 .main-nav a {
 	font-size: .95em;
 	color: #093a58;
 	text-transform: uppercase;
+	display: block;
+    font-weight: bold;
+    text-decoration: none;
 }
 
-.main-nav a:hover {
-	color: #093a58;
+.main-nav a:hover,
+.main-nav a:focus {
+	color: white;
+	background-color: brown;
+    box-shadow: 0 -2px 8px rgba(0, 0, 0, 0.2);
+    text-shadow: 0px 1px 1px white;
 }
 /* ---- Layout Containers ---- */
 
@@ -100,14 +109,12 @@ display: inline-block;
 	background-image: linear-gradient(to top, rgba(238, 220, 220, 0.5) 0%,rgb(243, 236, 236) 100%), url("../img/World-Travel-HD-Wallpaper-at-NewYork.jpg");
 	background-size: cover;
 	background-position: center;
-	padding: 3.2em 0;
-	margin-bottom: 10px;
+	padding: 1em 0;
+	margin-bottom: auto;
 }
 
 .col {
-	padding: 1em;
-	padding: 1em;
-
+	padding: .5em;
 }
 .descrip{
 
@@ -120,7 +127,8 @@ display: inline-block;
 	padding-right: 4em;
 	padding-bottom: 4em;
 	border-radius: 40%;
-	box-shadow: rgb(54, 38, 41);	
+	box-shadow: rgb(54, 38, 41);
+	
 
 }
 .info{
@@ -141,9 +149,8 @@ display: inline-block;
 }
 
 /* ---- Page Elements ---- */
-
 .logo {
-	width: 200px;
+	width: 280px;
 }
 .headline {
 	color: whitesmoke ;
@@ -186,17 +193,14 @@ display: inline-block;
 		color: black;
 		}
 .gallery-container{
-    padding: 6px 6px 6px 6px;
+	/* padding: 10px 10px 10px 6px; */
+	padding: 68px;
 	position: relative;
-	/* background-color: rgb(238, 170, 170); */
+	justify-content: center;
+	background-color: rgb(250, 248, 248);
    
 }
 
-/* Hide the images by default */
-.mySlides {
-	/* display: none; */
-  }
-  
   /* Add a pointer when hovering over the thumbnail images */
   .cursor {
 	cursor: pointer;
@@ -207,10 +211,10 @@ display: inline-block;
   .next {
 	cursor: pointer;
 	position: absolute;
-	top: 40%;
+	top: 50%;
 	width: auto;
-	padding: 16px;
-	margin-top: -50px;
+	padding: 30px;
+	margin-top: -60px;
 	color: white;
 	font-weight: bold;
 	font-size: 20px;
@@ -221,8 +225,9 @@ display: inline-block;
   
   /* Position the "next button" to the right */
   .next {
-	right: 0;
+	right: 3.5em;
 	border-radius: 3px 0 0 3px;
+	padding-right: 2em;
   }
   
   /* On hover, add a black background color with a little bit see-through */
@@ -235,7 +240,7 @@ display: inline-block;
   .numbertext {
 	color: #f2f2f2;
 	font-size: 12px;
-	padding: 8px 12px;
+	padding: 80px 12px;
 	position: absolute;
 	top: 0;
   }
@@ -296,6 +301,49 @@ label {
 
   display: block;
   margin:1em 1em 1em .5em; 
+}
+
+/* --------------------------FORM ERROR TOOLTIP MESSAGES-------------------------- */
+
+.input-tooltip {
+	min-width: 50px;
+	height: 25px;
+	display: none;
+	position: relative;
+	margin: 0 0 5px 0;
+	padding: 0 10px 10px 10px;
+	font-size: 15px;
+	text-align: center;
+	color: red;
+	border: 1px solid #a5a5a5;
+	border-bottom: 3px solid #a5a5a5;
+	border-radius: 15px;
+	/* border-radius: 0 0 20% 20%; */
+	box-shadow: 2px -1px 2px #8a8888;
+}
+.input-tooltip-notValid {
+	display: inline-block;
+	color: red;
+}
+.input-tooltip-valid {
+	display: inline-block;
+	color: green;
+	border-color: green;
+}
+.input-tooltip::after  {
+	content: '';
+	width: 0;
+	height: 0;
+	display: block;
+	position: absolute;
+	left: 20%;
+	border-top: 10px solid #a5a5a5;
+	border-left:  8px solid transparent;
+	border-right: 8px solid transparent;
+}
+.input-tooltip-valid::after { 
+	
+	border-top-color: green; 
 }
 
 .ava { 

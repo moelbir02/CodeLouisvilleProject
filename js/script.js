@@ -1,20 +1,4 @@
 
-// const submitBtn = document.querySelector('#btn');
-// const nameInput = document.querySelector ('#name');
-// 
-// function isFieldEmpty(){
-    //  
-    //  if (nameInput.value === ""){
-// 
-      // nameInput.value = 'plz enter name ' ;
-      // 
-    // 
-    //  }
-// 
-// }
-// submitBtn.addEventListener('click',isFieldEmpty );
-// 
-// 
 function myFunction() {
   var x = document.getElementById("myLinks");
   if (x.style.display === "block") {
@@ -54,4 +38,9 @@ function showSlides(n) {
   dots[slideIndex-1].className += " active";
   captionText.innerHTML = dots[slideIndex-1].alt;
 }
+
+
+
+
+
 

@@ -2,6 +2,9 @@
 <html>
 
 <head> 
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8">	
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">  
     <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/selectors.css">
@@ -15,11 +18,12 @@
             <a href="javascript:void(0);" class="icon" onclick="myFunction()">
                 <i class="fa fa-bars"></i>
               </a>
-           <h1 class="name" ><a href="#">My Contact Info</a></h1>
+           <h1 class="name" >My Contact Info</h1>
           <div id="myLinks">
 		    <ul class="main-nav">
-			     <li><a href="index.html">Home</a></li>
-			     <li><a href="file:///Users/mac/Desktop/portfolio/index.html#About">About </a></li>	
+                 <li><a href="index.html">Home</a></li>
+                 <li><a href="file:///Users/mac/Desktop/portfolio/index.html#About">About </a></li>	
+                 <li><a href="file:///Users/mac/Desktop/portfolio/index.html#gallery-container">Gallery </a></li>
 			     <li><a href="contact.html">Contact Me</a></li>
              </ul>
           </div>
@@ -41,21 +45,30 @@
         </div>
 
      <div class="forty"> 
-        <form class="form-contact br clearfix" id="contact">
-           <h1>Contact Me</h1>
-           <label for="name">Name:</label> 
-           <input type="text" id="name" value="">
-           <label for="phone"> Phone:</label> 
-           <input type="number" min= "0" max="9" id="phone">  
-           <label for="email">Email:</label>
-           <input type="email" id="email" placeholder="email@website.com">
-           <label for="msg">Message:</label>
-           <textarea id="msg" rows="7"></textarea>
-     
-            <input class="btn inln default" id= "btn" type="submit" value="Submit">
-        
-        </form>
-     </div>
+     <form class="form-contact br clearfix" id="contact" action="#.html">
+      <h1>Contact Me</h1>
+      <!-- <label for="name">Name:</label>-->
+      <div id="nameError" class="input-tooltip"> </div>
+         <label for="name">Full Name:</label>
+         <input type="text" id="name" placeholder="Full Name">
+        <!--<label for="email">Email:</label>-->
+        <div id="emailError" class="input-tooltip"></div>
+        <label for="email">Email:</label>
+        <input type="text" id="email" placeholder="Email@website.com">
+        <div id="subjectError" class="input-tooltip"> </div>
+        <label for="subject">Subject:</label>
+        <input type="text" id="subject" placeholder="Subject">
+
+      <!--<label for="msg">Message:</label>-->
+      <div id="msgError" class="input-tooltip"></div>
+      <label for="message">Message:</label>
+      <textarea id="msg" rows="7" placeholder="Type in your message here..."></textarea>
+   
+      <input type="submit" id="submit" class="btn inln default" value="Submit" style="width: 100%">
+   
+   </form>
+   </div>
+   <div id="test"></div>
   
      <footer class="main-footer">
         <ul class="nav">
@@ -68,5 +81,6 @@
         <span>&copy;2020Copyright. All Rights Reserved.</span>
     </footer>
     <script src="js/script.js"></script>
+
     </body>
 </html>

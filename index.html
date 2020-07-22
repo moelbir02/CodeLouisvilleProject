@@ -2,6 +2,8 @@
 <html>
 <head>
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta charset="UTF-8">	
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>My Portfolio </title>
 	<link rel="stylesheet" href="css/normalize.css">
 	<link rel="stylesheet" href="css/style.css">
@@ -18,11 +20,12 @@
 				<a href="javascript:void(0);" class="icon" onclick="myFunction()">
 					<i class="fa fa-bars"></i>
 				  </a>
-			  <h1 class="name" ><a href="#">My Portfolio</a></h1>
+			  <h1 class="name" >My Portfolio</h1>
 			  <div id="myLinks">
 			    <ul class="main-nav">
-				   <li><a href="#">Home</a></li>
+				   <li><a href="#home">Home</a></li>
 				   <li><a href="#About">About </a></li>	
+				   <li><a href="#gallery-container">Gallery </a></li>	
 				   <li><a href="contact.html">Contact Me</a></li>
 			    </ul>
 		     </div>
@@ -31,7 +34,7 @@
 		</div>
 	</header><!--/.main-header-->   
 
-	<div class="banner" >
+	<div class="banner" id="home" >
 		<img class="logo rounded" src="img/moe.png" alt="">
 
 		<h2 class="headline">Front-End Developer!</h2>
@@ -84,11 +87,11 @@
 
 	
 
-	<div class= "gallery-container">
+	<div class= "gallery-container " id="gallery-container">
 		
 		<div class="mySlides">
 			<div class="numbertext">1 / 6</div>
-			<img src="image/img_5terre_wide.jpg" style="width:100%">
+			<img src="image/img_5terre_wide.jpg" >
 		  </div>
 		
 		  <div class="mySlides">
