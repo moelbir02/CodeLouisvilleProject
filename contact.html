@@ -37,9 +37,9 @@
 
            <div class="info col">
             <h2>CONTACT INFO</h2>
-               <p><strong>Email: </strong> mohamed.elbir@gmail.com</p>
-               <p><strong> Phone : </strong> 9175437945</p>
-               <p><strong> Adress: </strong> 108 E Florence Av Louisville KY 40214</p>
+               <p><strong>Email: </strong><br> mohamed.elbir@gmail.com</p>
+               <p><strong> Phone : </strong><br> (917)5437945</p>
+               <p><strong> Adress: </strong> <br>100 E Florence Avenue <br> Louisville KY 40214</p>
            </div>
      
         </div>
@@ -47,29 +47,25 @@
      <div class="forty"> 
      <form class="form-contact br clearfix" id="contact" action="#.html">
       <h1>Contact Me</h1>
-      <!-- <label for="name">Name:</label>-->
-      <div id="nameError" class="input-tooltip"> </div>
-         <label for="name">Full Name:</label>
-         <input type="text" id="name" placeholder="Full Name">
-        <!--<label for="email">Email:</label>-->
-        <div id="emailError" class="input-tooltip"></div>
-        <label for="email">Email:</label>
-        <input type="text" id="email" placeholder="Email@website.com">
-        <div id="subjectError" class="input-tooltip"> </div>
-        <label for="subject">Subject:</label>
-        <input type="text" id="subject" placeholder="Subject">
+     
+         <label for="firstName"><span style= color:red; style= font-weight:blod;>*</span> First Name:</label>
+         <input type="text" id="name" placeholder="First Name" class="required" required="text">
 
-      <!--<label for="msg">Message:</label>-->
-      <div id="msgError" class="input-tooltip"></div>
+         <label for="lastName"><span style= color:red; style= font-weight:blod;>*</span> Last Name:</label>
+         <input type="text" id="name" placeholder="Last Name" class="required" required="text">  
+       
+        <label for="email"><span style= color:red; style= font-weight:blod;>*</span>Email:</label>
+        <input type="text" id="email" placeholder="Email@website.com" class="required" required="text">
+     
       <label for="message">Message:</label>
       <textarea id="msg" rows="7" placeholder="Type in your message here..."></textarea>
    
-      <input type="submit" id="submit" class="btn inln default" value="Submit" style="width: 100%">
-   
+      <button type="submit" id="submit" class="btn inln default" value="Submit" onclick="confirmSubmit()" style="width: 100%">Submit</button>
+      <p id="reqfield" style= color:red>*Required Fields</p>
    </form>
    </div>
-   <div id="test"></div>
   
+
      <footer class="main-footer">
         <ul class="nav">
             <li><a href="https://teamtreehouse.com/mohamedelbir"><img class="ava" src="img/tree.svg"> </a></li>

@@ -1,4 +1,6 @@
 
+
+// humberger menu 
 function myFunction() {
   var x = document.getElementById("myLinks");
   if (x.style.display === "block") {
@@ -37,8 +39,40 @@ function showSlides(n) {
   slides[slideIndex-1].style.display = "block";
   dots[slideIndex-1].className += " active";
   captionText.innerHTML = dots[slideIndex-1].alt;
+
 }
 
+
+
+//function for confirming and validating form.  
+
+function confirmSubmit() {
+  var invalidFields =[];
+  var requiredFields = document.querySelectorAll(".required");
+
+  requiredFields.forEach(field => {
+      if (field.value === '') {
+        invalidFields.push(field.name)
+      }
+    });
+
+    if (invalidFields.length > 0) {
+      alert(`Please fill out the form. There are required fields left.`);
+      console.log("no data entered");
+      return false;
+    } else {
+      var userChoice = confirm("Are you sure you want to submit?");
+      if (userChoice === false) {
+      alert("No Data Submitted");
+      console.log("user pressed cancel");
+      event.preventDefault(); 
+      } else {
+        alert("Submission Successful!");
+        console.log("user pressed submit");
+        return true;
+      };
+    };
+}
 
 
 
